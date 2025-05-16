@@ -42,13 +42,14 @@ public class MainMenu extends JFrame {
                 dispose(); // Tutup MainMenu
             }
         });
-
+        
         // Aksi tombol EXIT
         exitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Terima kasih telah bermain game tebak gambar");
                 System.exit(0);
             }
-        });
+    });
 
         add(panel);
     }
